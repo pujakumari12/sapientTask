@@ -51,7 +51,7 @@ font-weight: bold;
 
 .filter-divs div{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 10px 0px;
     
 }
@@ -63,13 +63,18 @@ font-weight: bold;
     font-weight: 500;
     
 }
+
+.filter-divs div:last-child{
+    justify-content: flex-start;
+    
+}
 .filter-divs div span:hover{
     background-color: #76af1e;
 }
 .filter-head{
     border-bottom: 1px solid grey;
     text-align: center;
-    width: 140px;
+    width: 80%;
     margin:auto;
 }
 .filter-cont{
@@ -83,15 +88,36 @@ font-weight: bold;
 .filter-wrap{
     padding:0px 10px;
 }
+
+.filter-launch-cont{
+    padding: 10px 0px;
+}
 .filter-launch-cont div{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
+
+
 .filter-launch-cont span{
     cursor: pointer;
     padding:0px 10px;
     background-color: #c5e09b;
     border-radius: 10px;
     font-weight: 500;
+
+}
+
+.filter-launch-cont span:hover{
+    background-color: #76af1e;
+}
+
+@media only screen and (max-width: 450px){
+    .card-custom{
+        width: 100% !important;
+        margin:10px 0px;
+    }
+    .filter-wrap{
+            padding:0px 40px;
+        }
 
 }
