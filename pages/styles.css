@@ -1,0 +1,97 @@
+body{
+    user-select: none;
+    background-color:#f2f2f2 !important;
+}
+.cards-cont{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-custom{
+    width: 250px;
+    background: #fff;
+    
+    padding: 20px;
+    border-radius: 5px;
+    
+    margin-bottom: 10px;
+}
+
+.img-cont{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.img{
+background-color: #ebebe0;
+
+}
+.mission-name{
+font-weight: bold;
+color:#3c44a1;
+font-size: 18px;
+}
+.mission-ids{
+font-weight: bold;
+
+}
+.launch-year{
+font-weight: bold;
+
+}
+
+.successful-launch{
+font-weight: bold;
+
+}
+.successful-landing{
+font-weight: bold;
+
+}
+
+.filter-divs div{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    
+}
+.filter-divs div span{
+    cursor: pointer;
+    padding:0px 10px;
+    background-color: #c5e09b;
+    border-radius: 10px;
+    font-weight: 500;
+    
+}
+.filter-divs div span:hover{
+    background-color: #76af1e;
+}
+.filter-head{
+    border-bottom: 1px solid grey;
+    text-align: center;
+    width: 140px;
+    margin:auto;
+}
+.filter-cont{
+    background: #fff;
+    padding: 10px;
+}
+.mission-ids ul li{
+    color:#3c44a1;
+    font-weight: lighter;
+}
+.filter-wrap{
+    padding:0px 10px;
+}
+.filter-launch-cont div{
+    display:flex;
+    justify-content: space-evenly;
+}
+.filter-launch-cont span{
+    cursor: pointer;
+    padding:0px 10px;
+    background-color: #c5e09b;
+    border-radius: 10px;
+    font-weight: 500;
+
+}
