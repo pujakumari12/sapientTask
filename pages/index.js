@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import nextId from 'react-id-generator';
 import {Container, Row, Col} from 'react-bootstrap';
 
 import Link from 'next/link'
