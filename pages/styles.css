@@ -115,9 +115,14 @@ font-weight: bold;
     .card-custom{
         width: 100% !important;
         margin:10px 0px;
+        padding: 20px 50px;
     }
     .filter-wrap{
             padding:0px 40px;
         }
+    .img-cont img{
+        width: 100% !important;
+    }
+
 
 }
