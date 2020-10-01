@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Container, Row, Col } from 'react-bootstrap';
-import {useId} from 'react-id-generator';
+
 
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -65,22 +65,22 @@ function index(props) {
             
         }
 
-       
-        if(localStorage.getItem(url) != undefined){
-            console.log(localStorage.getItem(url));
-            updateState(JSON.parse(localStorage.getItem(url)));
-            console.log("already cached")
-        }else{
-            axios.get(url)
-            .then(res => {
-                updateState(res.data);
-                localStorage.setItem(url,JSON.stringify(res.data));
-                console.log("not cached putting data into cache...")
-            }).catch(err => {
-                console.log(err);
-            })
+        try{
+            if(localStorage.getItem(url) != undefined){
+                updateState(JSON.parse(localStorage.getItem(url)));
+            }else{
+                axios.get(url)
+                .then(res => {
+                    updateState(res.data);
+                    localStorage.setItem(url,JSON.stringify(res.data));
+                }).catch(err => {
+                    console.log(err);
+                })
+            }
         }
-        
+        catch(e){
+            console.log(e)
+        }
                     
     }
 
